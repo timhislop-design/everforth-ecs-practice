@@ -1,0 +1,1919 @@
+{
+  "title": "ECS OOTB Practice",
+  "subtitle": "Collateral Blueprint",
+  "tagline": "What we build, in what order, for whom \u2014 to deliver the 18-week OOTB-first AI realization engagement at scale.",
+  "label": "INTERNAL BLUEPRINT",
+  "sections": [
+    {
+      "kind": "h1",
+      "text": "How to Use This Blueprint"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "This document is the catalog and build plan for the ECS OOTB-first ServiceNow practice's collateral library. It is not the collateral itself. It tells you what artifacts the practice needs, who each artifact is for, in what sequence to build them, and where each one lives in the library.",
+        "The intended use is session-by-session execution. Pick the next artifact from the build roadmap (Section 8). In a single working session \u2014 with the AI assistant or independently \u2014 produce that one artifact. Push it to the library. Update its status. Move to the next.",
+        "The library serves two purposes. First, it equips the ECS delivery team to consistently run the OOTB-first 18-week engagement \u2014 every consultant working from the same playbook, the same demo scripts, the same Adopt-vs-Re-engineer talking points. Second, it is the source-of-truth from which customer-specific blueprints are synthesized. When a new customer engagement begins, the practice does not start from scratch \u2014 it draws from this library and tailors a customer blueprint, project plan, and pre-workshop materials in a single synthesis pass."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "The Practice We Are Collateralizing"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The ECS Federal ServiceNow practice sells an OOTB-first delivery model whose explicit value propositions are (1) accelerated AI realization through clean OOTB-aligned data and process foundations, and (2) systematic elimination of technical debt accumulated under custom-first delivery. The model is delivered against a baseline 18-week engagement plan: Sprint 0 setup, Sprints 1\u20136 build, plus hypercare and operational handoff. Every sprint has named workshops, named deliverables, and named decision rights.",
+        "The model only works when two disciplines are intact. The first is the OOTB-Defense Discipline \u2014 when the customer asks for a custom pattern (\"but our old system did X\"), the consultant has the OOTB equivalent ready, with talking points, demo, and pushback language pre-rehearsed. The second is the Trust-But-Verify Management Discipline \u2014 practice management has the engagement-health signals to know when an engagement is silently slipping into custom-build under OOTB-first branding, and the templates to course-correct before the engagement is in trouble.",
+        "The current state of the practice has neither discipline reliably. Consultants are smart and well-intentioned, but each runs the model from memory and individual experience. Customers experience inconsistency. Customizations creep in not because anyone decided to customize, but because no one had the OOTB defense ready in the moment. The collateral library exists to retire that gap by making the disciplines portable: every consultant works from the same workshop guides, the same demo scripts, the same Adopt-vs-Re-engineer cheatsheets. Every manager works from the same engagement-health dashboard.",
+        "Collateral does not replace consultants. It scaffolds them. The library is what makes the OOTB-first model survive personnel changes, scale across engagements, and produce repeatable economics."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Audience Strategy"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Every artifact in the library is tagged with its audience. The audience determines tone, depth, and what is safe to say. Mixing audiences in a single artifact is the most common reason collateral underperforms \u2014 internal consultant guides written for customer eyes lose the operational candor that makes them useful; customer documents written for internal eyes condescend or oversimplify."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Internal \u2014 for ECS team only"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "ECS-internal consultants, engagement managers, process consultants, solution architects, developers, practice management. Tone is operational, candid, occasionally blunt about customer pushback patterns. Never shared outside ECS. Includes the consultant handbook, the discipline how-to guides, the Adopt-vs-Re-engineer cheatsheets, the demo scripts, the trust-but-verify management pack, and lessons-learned material."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Client \u2014 for customer eyes"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Customer project sponsors, decision-makers, SMEs, and end users. Tone is professional, partnership-oriented, never preachy. Avoids language that frames the customer's prior choices as wrong. Includes engagement overview materials, customer readiness checklists, decision-topic guides (\"how to think about category structure simplification\"), workshop pre-reads, and closeout/hypercare materials."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Shared \u2014 mixed-audience"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Artifacts that explicitly serve both audiences. The accelerator packs are the canonical example: customer-fillable workbooks (Instructions, Process Decisions, Configuration Data, R&R) plus ECS-internal tabs (Consultant Guide, Adoption vs Re-engineering, ServiceNow Mapping). Project plans, governance decks, and steering committee materials also fall here. Audience tagging is per-tab/per-section rather than per-document."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Internal Collateral Catalog"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The internal library is the operational backbone of the practice. It is what makes the OOTB-Defense Discipline and the Trust-But-Verify Discipline portable across the team."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "The Consultant Handbook"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The master playbook every ECS consultant on the practice reads in full before their first engagement. Single source of truth for: the OOTB-first model, the 18-week engagement spine, decision rights, the customization-council process, the trust-but-verify model, escalation paths, and the index of every artifact in the library. Updated quarterly. New consultants are onboarded against this document. Companion to the existing ECS Internal Governance Operating Guide and the OOTB Delivery Playbook."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-CH-01",
+          "Consultant Handbook (Master)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-CH-02",
+          "Consultant Onboarding Checklist",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-CH-03",
+          "Engagement Decision Rights Reference",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-CH-04",
+          "OOTB-First Glossary",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Sales & Pre-Engagement (Internal)"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-SP-01",
+          "Discovery Questionnaire (consultant-facing)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-SP-02",
+          "Discovery Interview Facilitation Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-SP-03",
+          "ROI Calculator (technical-debt elimination model)",
+          "Internal",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "INT-SP-04",
+          "AI License Realization Sales Talking Points",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-SP-05",
+          "Proposal Template (OOTB-first SOW)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-SP-06",
+          "Sales Objection Handling \u2014 Top 20",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-SP-07",
+          "Pre-Sales Demo Script (Customer Discovery)",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Sprint 0 Setup (Internal)"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-S0-01",
+          "Sprint 0 Facilitator Playbook",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-02",
+          "Customer Readiness Validation Checklist (consultant)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-03",
+          "Engagement Kickoff Facilitation Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-04",
+          "Decision Rights Setup Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-05",
+          "Customization Council Charter Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-06",
+          "Risk Register Template",
+          "Internal",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "INT-S0-07",
+          "Communication Plan Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-S0-08",
+          "Sprint 0 Health-Check Audit",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Per-Sprint Facilitator Guides"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "One facilitator guide per sprint, per discipline. Each guide contains: workshop agenda, decision pre-fills (with ECS recommendations), demo flow, common-pitfalls cheatsheet, and retro template. Built once per discipline, updated by retro feedback."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-FG-01",
+          "Sprint 1 Platform Foundation \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-02",
+          "Sprint 1 Incident Management \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-03",
+          "Sprint 2 Catalog & Request \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-04",
+          "Sprint 2 Employee Center \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-05",
+          "Sprint 3 Knowledge \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-06",
+          "Sprint 3 Virtual Agent \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-07",
+          "Sprint 4 Change \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-08",
+          "Sprint 4 CSDM \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-09",
+          "Sprint 4 CMDB \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-10",
+          "Sprint 4 Discovery \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-11",
+          "Sprint 5 Service Graph \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-12",
+          "Sprint 5 HAM \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-13",
+          "Sprint 5 Integrations \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-14",
+          "Sprint 6 Performance Analytics \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-FG-15",
+          "Sprint 6 Reporting & Stabilization \u2014 Facilitator Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Discipline How-To Guides (consultant-facing)"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Deep operational guides for the disciplines that matter most for OOTB-first execution. Each guide explains: what the discipline is, what good looks like, the OOTB capability set, common customer requests vs OOTB defenses, the demo flow, the UAT scenarios, and the post-go-live ownership pattern. Built one at a time; pairs naturally with each accelerator pack."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-HT-01",
+          "Platform Foundation How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-02",
+          "Incident Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-03",
+          "Major Incident Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-04",
+          "Problem Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-05",
+          "Change Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-06",
+          "Service Catalog & Request Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-07",
+          "Knowledge Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-08",
+          "Employee Center How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-09",
+          "Virtual Agent How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-10",
+          "Predictive Intelligence How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-11",
+          "Now Assist / GenAI How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-12",
+          "CSDM How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-13",
+          "CMDB How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-14",
+          "Discovery How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-15",
+          "Service Graph Connectors How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-16",
+          "HAM How-To (Foundations + Realization)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-17",
+          "SAM How-To (Foundations + Realization)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-18",
+          "Event Management How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-19",
+          "Performance Analytics How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-HT-20",
+          "Integrations (AD/Entra, SSO, SCCM, Intune) How-To",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Adopt-vs-Re-engineer Cheatsheets"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Single-page quick-reference cards for each discipline. Extracted from the Adoption-vs-Re-engineering tab of each accelerator pack and from the discipline how-to guides. Designed to be printed, laminated, and kept in the consultant's workshop kit. Format: customer pattern \u2192 OOTB defense \u2192 suggested pushback line \u2192 when to actually customize."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-AR-01",
+          "Catalog Item Rationalization",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-02",
+          "Category Structure Simplification",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-03",
+          "SLA Discipline",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-04",
+          "Assignment Rules \u2014 Anti-Spaghetti",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-05",
+          "Approval Discipline \u2014 Less is More",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-06",
+          "State / Lifecycle Discipline",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-07",
+          "Knowledge Article Curation",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-08",
+          "Virtual Agent Topic Selection",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-09",
+          "Predictive Intelligence Readiness",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-10",
+          "CMDB Class Selection",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-11",
+          "Discovery Phasing",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-12",
+          "Integration Prioritization",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-13",
+          "Custom-vs-OOTB Decision Framework",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-14",
+          "Form Customization Discipline",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-15",
+          "Notification Discipline",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-AR-16",
+          "Reporting & Dashboard Discipline",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Demo Scripts"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "OOTB demo flows per discipline. Each script: pre-demo setup, click-by-click flow, talking points at each step, common questions and answers, and 'recovery' notes for when the demo data isn't quite right. Designed so any consultant can deliver a clean OOTB demo without rehearsal."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-DS-01",
+          "Incident Management Demo Script",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-02",
+          "Catalog & Request Demo Script",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-03",
+          "Knowledge / Virtual Agent Combined Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-04",
+          "Change & CAB Workbench Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-05",
+          "CSDM Service Map Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-06",
+          "HAM Receive-Assign-Return-Retire Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-07",
+          "Performance Analytics Dashboard Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-DS-08",
+          "Now Assist / GenAI Demo",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "UAT Test Pack Templates"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-UAT-01",
+          "UAT Test Pack \u2014 Master Template",
+          "Internal",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "INT-UAT-02",
+          "UAT Execution Playbook (consultant-facing)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-UAT-03",
+          "UAT Defect Triage Guide",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Trust-But-Verify Management Pack"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The manager-facing collateral that lets practice management catch silent customization drift, OOTB-discipline erosion, and engagement-health risks before they become escalations. Companion to the existing ECS Internal Governance Operating Guide. The single most under-built area of the current practice \u2014 your team's primary discipline gap is not technical, it is managerial."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-TBV-01",
+          "Manager's Trust-But-Verify Playbook",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-02",
+          "Engagement Health Dashboard (template)",
+          "Internal",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-03",
+          "Customization Variance Tracker",
+          "Internal",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-04",
+          "Bi-Weekly Sponsor Sync Agenda Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-05",
+          "Customization Council Pre-Read Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-06",
+          "Sprint Demo Discipline Audit",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-07",
+          "Practice Management Monthly Review Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-08",
+          "Engagement Course-Correction Playbook",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-TBV-09",
+          "Consultant Coaching Conversation Templates",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Lessons Learned & Knowledge Reuse"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-LL-01",
+          "Engagement Lessons-Learned Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-LL-02",
+          "Practice Knowledge Repository Index",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-LL-03",
+          "Customization Pattern Library (when we do customize, what we learned)",
+          "Internal",
+          "docx",
+          "Plan"
+        ],
+        [
+          "INT-LL-04",
+          "Quarterly Practice Retro Template",
+          "Internal",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Client Collateral Catalog"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Customer-facing material that prepares decision-makers and SMEs for the disciplined OOTB-first engagement. The objective is not to convince \u2014 that work happens in sales \u2014 but to equip the customer team to participate fully and decide quickly. Tone is partnership, never instructional."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Engagement Overview"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-EO-01",
+          "The 18-Week OOTB-First Journey (customer overview deck)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-EO-02",
+          "Roles & Expectations (customer-facing)",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-EO-03",
+          "Decision Rights \u2014 Customer Edition",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-EO-04",
+          "Why OOTB-First (customer whitepaper, leverages existing ECS_OOTB_AI_License_Realization_Whitepaper)",
+          "Client",
+          "docx",
+          "Exists"
+        ],
+        [
+          "CLT-EO-05",
+          "Engagement FAQ",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Sprint 0 Customer Readiness"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-S0-01",
+          "Sprint 0 Customer Readiness Checklist",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-S0-02",
+          "Customer Kickoff Briefing Deck",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-S0-03",
+          "Stakeholder Mapping Template",
+          "Client",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "CLT-S0-04",
+          "SME Time-Commitment Calendar",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-S0-05",
+          "Customer-Side Pre-Reads \u2014 Sprint 0 Pack",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Per-Sprint Customer Briefs"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "One brief per sprint. Each brief: pre-sprint announcement (one page), workshop pre-read (the discipline's decision context), sprint demo deck (what they'll see), and sprint retro participant deck. Replaces ad-hoc emails."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-PS-01",
+          "Sprint 1 Customer Brief (Platform + Incident)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-PS-02",
+          "Sprint 2 Customer Brief (Catalog + Employee Center)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-PS-03",
+          "Sprint 3 Customer Brief (Knowledge + Virtual Agent)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-PS-04",
+          "Sprint 4 Customer Brief (Change + CSDM + CMDB + Discovery)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-PS-05",
+          "Sprint 5 Customer Brief (Service Graph + HAM + Integrations)",
+          "Client",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "CLT-PS-06",
+          "Sprint 6 Customer Brief (PA + Reporting & Stabilization)",
+          "Client",
+          "pptx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Decision Topic Guides"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The \"how to think about X\" series. These are the customer-facing companion to the internal Adopt-vs-Re-engineer cheatsheets. Where the cheatsheet equips the consultant to defend OOTB in real-time, the decision topic guide arms the customer to consider the trade-offs themselves before the workshop. Together they remove most of the workshop friction. Customers who read these before workshops make better decisions, faster."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-DT-01",
+          "Catalog Item Rationalization \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-02",
+          "Category Structure Simplification \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-03",
+          "SLA Discipline \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-04",
+          "Assignment Rules \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-05",
+          "Approval Discipline \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-06",
+          "State & Lifecycle \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-07",
+          "Knowledge Article Curation \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-08",
+          "Virtual Agent Topic Selection \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-09",
+          "Predictive Intelligence Readiness \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-10",
+          "CMDB Class Selection \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-11",
+          "Discovery Phasing \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-12",
+          "Integration Prioritization \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-13",
+          "Custom-vs-OOTB Decision Framework (customer view)",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-DT-14",
+          "Technical Debt Elimination Roadmap \u2014 Decision Guide",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Workshop Pre-Reads"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-WP-01",
+          "Workshop Pre-Read Template",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-WP-02",
+          "Workshop Pre-Reads \u2014 One per discipline (16 total)",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "UAT Execution (customer-facing)"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-UAT-01",
+          "UAT Customer Playbook",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-UAT-02",
+          "UAT Test Scenario Pack \u2014 One per discipline",
+          "Client",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "CLT-UAT-03",
+          "UAT Defect-Reporting Template",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Closeout & Hypercare"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "CLT-CO-01",
+          "Go-Live Checklist (customer-facing)",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-02",
+          "Knowledge Transfer Library Index",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-03",
+          "Hypercare Expectations Document",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-04",
+          "Operational Handoff Pack",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-05",
+          "Post-Go-Live Ownership Matrix",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-06",
+          "Customer SOP Library \u2014 Discipline Operating Procedures",
+          "Client",
+          "docx",
+          "Plan"
+        ],
+        [
+          "CLT-CO-07",
+          "Continuous Improvement Roadmap (customer)",
+          "Client",
+          "docx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Shared Collateral Catalog"
+    },
+    {
+      "kind": "h2",
+      "text": "Accelerator Packs"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Mixed-audience workbook packs. Customer fills Instructions, Process Decisions, and Configuration Data tabs; ECS works the Consultant Guide, Adoption-vs-Re-engineering, and ServiceNow Mapping tabs. Each pack is a self-contained delivery asset for a single discipline. Two-prong packs (Foundations + Realization) for disciplines that benefit from staged delivery; single packs for everything else."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Pack",
+        "Audience",
+        "Status"
+      ],
+      "rows": [
+        [
+          "AP-01",
+          "Foundation Data Pack (8 workbooks)",
+          "Shared",
+          "Exists"
+        ],
+        [
+          "AP-02",
+          "ITSM Pack (6 workbooks)",
+          "Shared",
+          "Exists"
+        ],
+        [
+          "AP-03",
+          "Integration Pack (4 workbooks: AD, SSO, SCCM, Intune)",
+          "Shared",
+          "Exists"
+        ],
+        [
+          "AP-04",
+          "HAM Foundations Accelerator Pack (6 workbooks)",
+          "Shared",
+          "Built"
+        ],
+        [
+          "AP-05",
+          "HAM Realization Accelerator Pack (8 workbooks)",
+          "Shared",
+          "Built"
+        ],
+        [
+          "AP-06",
+          "SAM Foundations Accelerator Pack",
+          "Shared",
+          "Next"
+        ],
+        [
+          "AP-07",
+          "SAM Realization Accelerator Pack",
+          "Shared",
+          "Next"
+        ],
+        [
+          "AP-08",
+          "Event Management Foundations Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-09",
+          "Event Management Realization Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-10",
+          "CSDM Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-11",
+          "CMDB Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-12",
+          "Discovery Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-13",
+          "Knowledge Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-14",
+          "Catalog & Request Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-15",
+          "Employee Center Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-16",
+          "Virtual Agent Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-17",
+          "Predictive Intelligence Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-18",
+          "Now Assist / GenAI Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-19",
+          "Performance Analytics Accelerator Pack",
+          "Shared",
+          "Plan"
+        ],
+        [
+          "AP-20",
+          "Reporting & Stabilization Accelerator Pack",
+          "Shared",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Project Plans"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "SH-PP-01",
+          "18-Week Master Project Plan (template)",
+          "Shared",
+          "mpp/xlsx",
+          "Plan"
+        ],
+        [
+          "SH-PP-02",
+          "ServiceNow GTM Project Plan Variant",
+          "Shared",
+          "mpp/xlsx",
+          "Plan"
+        ],
+        [
+          "SH-PP-03",
+          "Microsoft GTM Project Plan Variant",
+          "Shared",
+          "mpp/xlsx",
+          "Plan"
+        ],
+        [
+          "SH-PP-04",
+          "Sprint Burndown Template",
+          "Shared",
+          "xlsx",
+          "Plan"
+        ],
+        [
+          "SH-PP-05",
+          "Dependency-Tracking Template",
+          "Shared",
+          "xlsx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Steering & Governance"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "SH-SG-01",
+          "Steering Committee Deck Template",
+          "Shared",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "SH-SG-02",
+          "Customization Council Deck Template",
+          "Shared",
+          "pptx",
+          "Plan"
+        ],
+        [
+          "SH-SG-03",
+          "Status Report Template (weekly)",
+          "Shared",
+          "docx",
+          "Plan"
+        ],
+        [
+          "SH-SG-04",
+          "Change Request Template",
+          "Shared",
+          "docx",
+          "Plan"
+        ],
+        [
+          "SH-SG-05",
+          "Risk-Issue Tracker Template",
+          "Shared",
+          "xlsx",
+          "Plan"
+        ]
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "The Build Plan \u2014 Sequencing Principles"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The library is built artifact-by-artifact across many sessions. The order matters because some artifacts unblock others, and because some artifacts deliver immediate field value while others are foundational. The principles below shape the sequence."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Principle 1 \u2014 Manager-First"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The Trust-But-Verify Management Pack and the Consultant Handbook come early \u2014 before most discipline guides \u2014 because they establish the discipline that lets everything else stick. A library of perfect discipline guides without a manager pack to enforce their use produces a shelf of unused PDFs."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Principle 2 \u2014 Pair Discipline Guides with Their Accelerator Packs"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Each discipline accelerator pack (HAM, SAM, Event, etc.) gets its consultant How-To Guide, its Adopt-vs-Re-engineer Cheatsheet, and its Customer Decision Topic Guide built in the same general window. Pairing reduces context-switching cost and surfaces gaps in the pack content while it is fresh."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Principle 3 \u2014 Decision Topic Guides are High-Leverage Quick Wins"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Each Decision Topic Guide (Catalog Rationalization, SLA Discipline, etc.) is a single-session build with disproportionate value. A consultant going into a workshop with a pre-read decision guide in the customer's hands has a measurably easier workshop. Build them in parallel with the bigger discipline assets."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Principle 4 \u2014 Per-Sprint Facilitator Guides Come After Their Disciplines"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "A facilitator guide for Sprint 4 Change is best built after the Change discipline how-to guide and the existing Change sprint workbook are settled. Build them in the order: (a) discipline how-to \u2192 (b) accelerator pack (if not already in repo) \u2192 (c) facilitator guide."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Principle 5 \u2014 Customer-Facing Pre-Reads After Internal Equivalents"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Customer-facing decision topic guides and workshop pre-reads are derived from the internal cheatsheets and how-to guides. Build the internal version first (richer, more candid), then translate to the customer voice."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "The Build Roadmap \u2014 Next 12 Sessions"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "A concrete sequenced list of the next 12 build sessions. This is the pragmatic working list \u2014 adjust as priorities shift. Each session targets one or two artifacts that fit a single working session's scope. After each session, push to GitHub and update Build Status in the catalog."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "#",
+        "Artifact",
+        "Why Now",
+        "Output Folder"
+      ],
+      "rows": [
+        [
+          "1",
+          "Manager's Trust-But-Verify Playbook (INT-TBV-01)",
+          "The biggest single-document leverage in the library. Establishes the management discipline before the team accumulates more discipline gaps.",
+          "01_Internal/09_Trust_but_Verify_Management/"
+        ],
+        [
+          "2",
+          "Consultant Handbook v1 skeleton (INT-CH-01)",
+          "Single source of truth that all subsequent internal artifacts cross-reference.",
+          "01_Internal/01_Consultant_Handbook/"
+        ],
+        [
+          "3",
+          "SAM Foundations Accelerator Pack (AP-06)",
+          "Next pack on your stated priority list. 8-tab structure mirrors HAM Foundations.",
+          "03_Shared/01_Accelerator_Packs/"
+        ],
+        [
+          "4",
+          "SAM Realization Accelerator Pack (AP-07)",
+          "Companion to SAM Foundations.",
+          "03_Shared/01_Accelerator_Packs/"
+        ],
+        [
+          "5",
+          "Decision Topic Guide \u2014 Catalog Item Rationalization (CLT-DT-01)",
+          "Quick-win client guide; addresses the most common workshop friction point.",
+          "02_Client/04_Decision_Topic_Guides/"
+        ],
+        [
+          "6",
+          "Decision Topic Guide \u2014 Category Structure Simplification (CLT-DT-02)",
+          "Quick-win client guide.",
+          "02_Client/04_Decision_Topic_Guides/"
+        ],
+        [
+          "7",
+          "Decision Topic Guide \u2014 SLA Discipline (CLT-DT-03)",
+          "Quick-win client guide.",
+          "02_Client/04_Decision_Topic_Guides/"
+        ],
+        [
+          "8",
+          "Adopt-vs-Re-engineer Cheatsheet \u2014 Catalog Item Rationalization (INT-AR-01)",
+          "Internal companion to CLT-DT-01.",
+          "01_Internal/06_Adopt_vs_Reengineer_Cheatsheets/"
+        ],
+        [
+          "9",
+          "Event Management Foundations Accelerator Pack (AP-08)",
+          "Third pack on your priority list.",
+          "03_Shared/01_Accelerator_Packs/"
+        ],
+        [
+          "10",
+          "Event Management Realization Accelerator Pack (AP-09)",
+          "Companion to Event Foundations.",
+          "03_Shared/01_Accelerator_Packs/"
+        ],
+        [
+          "11",
+          "HAM How-To Consultant Guide (INT-HT-16)",
+          "Internal companion to the HAM packs already built.",
+          "01_Internal/05_Discipline_How-To_Guides/"
+        ],
+        [
+          "12",
+          "Sprint 1 Platform Foundation \u2014 Facilitator Guide (INT-FG-01)",
+          "First per-sprint guide. Validates the pattern that the other 14 will reuse.",
+          "01_Internal/04_Per_Sprint_Facilitator_Guides/"
+        ]
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Folder Structure & Branding Standards"
+    },
+    {
+      "kind": "h2",
+      "text": "Folder Structure"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "All collateral lives under Delivery_Approach_Artifacts/Collateral_Library/. Three top-level audience folders: 01_Internal/, 02_Client/, 03_Shared/. Each contains numbered topic subfolders matching the catalog sections of this blueprint. The 00_Master_Blueprint folder holds this document and any future master indexes."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Naming Convention"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "DOC-AUDIENCE-PHASE-TOPIC-VERSION. Audience codes: INT (internal), CLT (client), SH (shared). Phase codes: CH (consultant handbook), SP (sales / pre-engagement), S0 (sprint 0), FG (facilitator guide), HT (how-to), AR (adopt-vs-reengineer), DS (demo script), UAT, TBV (trust-but-verify), LL (lessons learned), EO (engagement overview), PS (per sprint), DT (decision topic), WP (workshop pre-read), CO (closeout), AP (accelerator pack), PP (project plan), SG (steering & governance). Example: INT-TBV-01 \u2014 Manager's Trust-But-Verify Playbook."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Branding Standard"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Every artifact uses the Everforth ECS Federal cover format established in the existing playbooks: logo top-left, audience label in teal small caps (INTERNAL HANDBOOK / CLIENT GUIDE / ACCELERATOR PACK / etc.), title in navy 28pt bold, italic teal-dark tagline, accent rule, practice line, recipient line, confidentiality line. Body in Arial 11 with navy headings and slate-dark text. Tables use navy header row with white text and alternating slate-light row shading. The exact brand palette: navy 0B1F3A, teal 14B8A6, teal-dark 0D9488, slate 1E293B, slate-light F1F5F9. The same palette is used in workbook tabs and headers."
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Audience Tagging in Headers"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Internal artifacts carry 'Internal Use Only \u00b7 Confidential' in the cover footer. Client artifacts carry 'Confidential \u2014 for the recipient and their organization' in the cover footer. Shared artifacts use audience-tagged tabs (workbooks) or per-section labels (decks). No artifact ever ships without an explicit audience footer."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Status Tracking"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "The Build Status column in each catalog table uses four values: Plan (not started), In Progress (build session in flight), Built (in library, awaiting first field use), Operational (used in at least one engagement and refined). Update statuses as work proceeds. Quarterly review: walk the catalog, mark Operational anything used in the prior quarter, plan the next 12 sessions of build."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Looking Ahead \u2014 The Synthesis Pass"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "When the library reaches operational maturity (most artifacts at Built or Operational status), it becomes the source for customer-specific synthesis. Inputs: customer profile (size, industry, current state), customer choices (Foundation vs Full delivery, integration depth, custom-vs-OOTB tolerance, named outliers), and engagement scope. Outputs: a tailored customer blueprint, project plan, sales collateral, pre-workshop materials, and demo scripts \u2014 drawn from library assets and adjusted for customer specifics in a single pass.",
+        "Library quality directly determines synthesis quality. An incomplete library produces synthesis with gaps. A library of inconsistent artifacts produces synthesis with discontinuities. The investment in this blueprint and the disciplined session-by-session build is an investment in the synthesis pass that will, eventually, replace ad-hoc engagement design with a repeatable practice asset.",
+        "Until then, the catalog above is the working backlog. One artifact at a time. The library compounds."
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Key Cross-References to Existing Repository"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Several documents already in Delivery_Approach_Artifacts/ are the foundation this library extends. Maintain references rather than duplicate."
+      ]
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "Existing Document",
+        "Role in Library",
+        "Maintenance"
+      ],
+      "rows": [
+        [
+          "ECS Internal Governance Operating Guide",
+          "Source of truth for governance & decision rights",
+          "Update as practice evolves; cross-link from Consultant Handbook"
+        ],
+        [
+          "ECS OOTB Delivery Playbook (Connection example)",
+          "Reference implementation of the playbook concept",
+          "Generic version to be derived during Consultant Handbook build"
+        ],
+        [
+          "ECS Accelerator Pack Blueprint",
+          "Source of truth for accelerator pack architecture",
+          "Cross-link from Consultant Handbook section on Accelerator Packs"
+        ],
+        [
+          "ECS_OOTB_AI_License_Realization_Whitepaper",
+          "Existing customer-facing AI realization narrative",
+          "Reference document for sales and engagement-overview collateral"
+        ],
+        [
+          "ECS_OOTB_AI_Sales_Deck.pptx",
+          "Existing sales deck",
+          "Reference for INT-SP series build; potential update once practice positioning is refined"
+        ],
+        [
+          "Workbooks_Rebranded/ (16 sprint workbooks)",
+          "Source for Per-Sprint Facilitator Guides",
+          "Cross-reference each sprint workbook in the matching INT-FG-* artifact"
+        ],
+        [
+          "Foundation Data Pack (8 workbooks)",
+          "Existing accelerator pack \u2014 reference structure",
+          "Documented as AP-01"
+        ],
+        [
+          "ITSM Accelerator Pack (6 workbooks)",
+          "Existing accelerator pack \u2014 reference structure",
+          "Documented as AP-02"
+        ],
+        [
+          "Integration Accelerator Pack (4 workbooks)",
+          "Existing accelerator pack \u2014 reference structure",
+          "Documented as AP-03"
+        ],
+        [
+          "ITAM_HAM_Foundations_Accelerator_Pack",
+          "Built today",
+          "Documented as AP-04; companion how-to (INT-HT-16) pending"
+        ],
+        [
+          "ITAM_HAM_Realization_Accelerator_Pack",
+          "Built today",
+          "Documented as AP-05; companion how-to (INT-HT-16) pending"
+        ]
+      ]
+    },
+    {
+      "kind": "h1",
+      "text": "Working With This Blueprint"
+    },
+    {
+      "kind": "prose",
+      "paragraphs": [
+        "Print this document. Or keep it open in a tab. At the start of each working session, pick the next artifact from Section 8 (or jump ahead to a specific catalog row if priorities shift). Brief the AI assistant with: the artifact ID, the audience, the source folder for cross-references, and any customer-context if applicable. The AI assistant will produce the artifact in the matching subfolder, branded to the practice standard, ready for review.",
+        "After each session, update Build Status in this blueprint and push the new artifact to GitHub. The blueprint itself is a living document \u2014 when a discipline area expands, when a new sprint pattern emerges, when the practice adopts a new ServiceNow capability, the catalog grows.",
+        "Build the library. Run engagements out of it. Refine it with each engagement's lessons. The disciplined OOTB-first practice you described \u2014 the one that delivers AI realization and eliminates technical debt at scale \u2014 is what this library, fully populated, becomes."
+      ]
+    }
+  ],
+  "audience": "ECS Federal ServiceNow Practice Lead, Engagement Managers, Solution Architects, Process Consultants"
+}
