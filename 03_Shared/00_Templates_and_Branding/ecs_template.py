@@ -146,6 +146,9 @@ class DocMeta:
     status: str = "Released"
     confidentiality: str = "Internal Use Only · Confidential"
     running_header_label: str = ""        # right-side header text on body pages
+    footer_left: str = ""                 # OPTIONAL — overrides the default footer-left text.
+                                          # Default (when empty): "{org} · Internal Use Only" — for Internal.
+                                          # Client artifacts should pass: "{org} · Confidential" or similar non-internal phrasing.
 
 
 # =============================================================================
@@ -272,7 +275,8 @@ class EcsDocument:
             pPr2.remove(existing2)
         insert_in_order(pPr2, tabs2, PPR_ORDER)
         # Left text
-        r1 = fp.add_run(f"{self.meta.org}  ·  Internal Use Only")
+        footer_left_text = self.meta.footer_left or f"{self.meta.org}  ·  Internal Use Only"
+        r1 = fp.add_run(footer_left_text)
         r1.font.name = "Calibri"; r1.font.size = Pt(8); r1.font.color.rgb = Brand.SLATE
         # Tab + right page-number
         fp.add_run("\t")
