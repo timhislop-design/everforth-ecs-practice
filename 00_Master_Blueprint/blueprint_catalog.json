@@ -111,18 +111,48 @@
           "Consultant Onboarding Checklist",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-CH-03",
           "Engagement Decision Rights Reference",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-CH-04",
           "OOTB-First Glossary",
+          "Internal",
+          "docx",
+          "Built"
+        ]
+      ]
+    },
+    {
+      "kind": "h2",
+      "text": "Practice Onboarding & Adoption"
+    },
+    {
+      "kind": "table",
+      "columns": [
+        "ID",
+        "Artifact",
+        "Audience",
+        "Format",
+        "Build Status"
+      ],
+      "rows": [
+        [
+          "INT-OR-01",
+          "ECS Practice Onboarding Roadmap (Role × Phase guide)",
+          "Internal",
+          "docx",
+          "Built"
+        ],
+        [
+          "INT-OR-02",
+          "Practice Rollout Staging Plan (team OCM phases)",
           "Internal",
           "docx",
           "Plan"
@@ -148,49 +178,49 @@
           "Discovery Questionnaire (consultant-facing)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-02",
           "Discovery Interview Facilitation Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-03",
           "ROI Calculator (technical-debt elimination model)",
           "Internal",
           "xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-04",
           "AI License Realization Sales Talking Points",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-05",
           "Proposal Template (OOTB-first SOW)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-06",
           "Sales Objection Handling — Top 20",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-SP-07",
           "Pre-Sales Demo Script (Customer Discovery)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -213,56 +243,56 @@
           "Sprint 0 Facilitator Playbook",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-02",
           "Customer Readiness Validation Checklist (consultant)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-03",
           "Engagement Kickoff Facilitation Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-04",
           "Decision Rights Setup Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-05",
           "Customization Council Charter Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-06",
           "Risk Register Template",
           "Internal",
           "xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-07",
           "Communication Plan Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-S0-08",
           "Sprint 0 Health-Check Audit",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -291,84 +321,84 @@
           "Sprint 1 Platform Foundation — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-02",
           "Sprint 1 Incident Management — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-03",
           "Sprint 2 Catalog & Request — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-04",
           "Sprint 2 Employee Center — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-05",
           "Sprint 3 Knowledge — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-06",
           "Sprint 3 Virtual Agent — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-07",
           "Sprint 4 Change — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-08",
           "Sprint 4 CSDM — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-09",
           "Sprint 4 CMDB — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-10",
           "Sprint 4 Discovery — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-11",
           "Sprint 5 Service Graph — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-12",
           "Sprint 5 HAM — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-FG-13",
@@ -389,7 +419,7 @@
           "Sprint 6 Reporting & Stabilization — Facilitator Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -418,140 +448,140 @@
           "Platform Foundation How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-02",
           "Incident Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-03",
           "Major Incident Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-04",
           "Problem Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-05",
           "Change Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-06",
           "Service Catalog & Request Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-07",
           "Knowledge Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-08",
           "Employee Center How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-09",
           "Virtual Agent How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-10",
           "Predictive Intelligence How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-11",
           "Now Assist / GenAI How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-12",
           "CSDM How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-13",
           "CMDB How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-14",
           "Discovery How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-15",
           "Service Graph Connectors How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-16",
           "HAM How-To (Foundations + Realization)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-17",
           "SAM How-To (Foundations + Realization)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-18",
           "Event Management How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-19",
           "Performance Analytics How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-HT-20",
           "Integrations (AD/Entra, SSO, SCCM, Intune) How-To",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -580,112 +610,112 @@
           "Catalog Item Rationalization",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-02",
           "Category Structure Simplification",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-03",
           "SLA Discipline",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-04",
           "Assignment Rules — Anti-Spaghetti",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-05",
           "Approval Discipline — Less is More",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-06",
           "State / Lifecycle Discipline",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-07",
           "Knowledge Article Curation",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-08",
           "Virtual Agent Topic Selection",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-09",
           "Predictive Intelligence Readiness",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-10",
           "CMDB Class Selection",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-11",
           "Discovery Phasing",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-12",
           "Integration Prioritization",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-13",
           "Custom-vs-OOTB Decision Framework",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-14",
           "Form Customization Discipline",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-15",
           "Notification Discipline",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-AR-16",
           "Reporting & Dashboard Discipline",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -714,56 +744,56 @@
           "Incident Management Demo Script",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-02",
           "Catalog & Request Demo Script",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-03",
           "Knowledge / Virtual Agent Combined Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-04",
           "Change & CAB Workbench Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-05",
           "CSDM Service Map Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-06",
           "HAM Receive-Assign-Return-Retire Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-07",
           "Performance Analytics Dashboard Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-DS-08",
           "Now Assist / GenAI Demo",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -786,21 +816,21 @@
           "UAT Test Pack — Master Template",
           "Internal",
           "xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-UAT-02",
           "UAT Execution Playbook (consultant-facing)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-UAT-03",
           "UAT Defect Triage Guide",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -836,56 +866,56 @@
           "Engagement Health Dashboard (template)",
           "Internal",
           "xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-03",
           "Customization Variance Tracker",
           "Internal",
           "xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-04",
           "Bi-Weekly Sponsor Sync Agenda Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-05",
           "Customization Council Pre-Read Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-06",
           "Sprint Demo Discipline Audit",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-07",
           "Practice Management Monthly Review Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-08",
           "Engagement Course-Correction Playbook",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-TBV-09",
           "Consultant Coaching Conversation Templates",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -908,28 +938,28 @@
           "Engagement Lessons-Learned Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-LL-02",
           "Practice Knowledge Repository Index",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-LL-03",
           "Customization Pattern Library (when we do customize, what we learned)",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "INT-LL-04",
           "Quarterly Practice Retro Template",
           "Internal",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -969,14 +999,14 @@
           "Roles & Expectations (customer-facing)",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-EO-03",
           "Decision Rights — Customer Edition",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-EO-04",
@@ -990,7 +1020,7 @@
           "Engagement FAQ",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -1013,7 +1043,7 @@
           "Sprint 0 Customer Readiness Checklist",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-S0-02",
@@ -1034,14 +1064,14 @@
           "SME Time-Commitment Calendar",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-S0-05",
           "Customer-Side Pre-Reads — Sprint 0 Pack",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -1070,42 +1100,42 @@
           "Sprint 1 Customer Brief (Platform + Incident)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-PS-02",
           "Sprint 2 Customer Brief (Catalog + Employee Center)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-PS-03",
           "Sprint 3 Customer Brief (Knowledge + Virtual Agent)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-PS-04",
           "Sprint 4 Customer Brief (Change + CSDM + CMDB + Discovery)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-PS-05",
           "Sprint 5 Customer Brief (Service Graph + HAM + Integrations)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-PS-06",
           "Sprint 6 Customer Brief (PA + Reporting & Stabilization)",
           "Client",
           "pptx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -1141,91 +1171,98 @@
           "Category Structure Simplification — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-03",
           "SLA Discipline — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-04",
           "Assignment Rules — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-05",
           "Approval Discipline — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-06",
           "State & Lifecycle — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-07",
           "Knowledge Article Curation — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-08",
           "Virtual Agent Topic Selection — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-09",
           "Predictive Intelligence Readiness — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-10",
           "CMDB Class Selection — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-11",
           "Discovery Phasing — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-12",
           "Integration Prioritization — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-13",
           "Custom-vs-OOTB Decision Framework (customer view)",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-DT-14",
           "Technical Debt Elimination Roadmap — Decision Guide",
           "Client",
           "docx",
-          "Plan"
+          "Built"
+        ],
+        [
+          "CLT-DT-15",
+          "Event Management Decision Guide",
+          "Client",
+          "docx",
+          "Built"
         ]
       ]
     },
@@ -1248,14 +1285,21 @@
           "Workshop Pre-Read Template",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-WP-02",
           "Workshop Pre-Reads — One per discipline (16 total)",
           "Client",
           "docx",
-          "Plan"
+          "Built"
+        ],
+        [
+          "CLT-WP-17",
+          "Event Management Workshop Pre-Read",
+          "Client",
+          "docx",
+          "Built"
         ]
       ]
     },
@@ -1278,7 +1322,7 @@
           "UAT Customer Playbook",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-UAT-02",
@@ -1315,49 +1359,49 @@
           "Go-Live Checklist (customer-facing)",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-02",
           "Knowledge Transfer Library Index",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-03",
           "Hypercare Expectations Document",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-04",
           "Operational Handoff Pack",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-05",
           "Post-Go-Live Ownership Matrix",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-06",
           "Customer SOP Library — Discipline Operating Procedures",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ],
         [
           "CLT-CO-07",
           "Continuous Improvement Roadmap (customer)",
           "Client",
           "docx",
-          "Plan"
+          "Built"
         ]
       ]
     },
@@ -1430,79 +1474,85 @@
           "AP-08",
           "Event Management Foundations Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-09",
           "Event Management Realization Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-10",
           "CSDM Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-11",
           "CMDB Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-12",
           "Discovery Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-13",
           "Knowledge Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-14",
           "Catalog & Request Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-15",
           "Employee Center Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-16",
           "Virtual Agent Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-17",
           "Predictive Intelligence Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-18",
           "Now Assist / GenAI Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-19",
           "Performance Analytics Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
         ],
         [
           "AP-20",
           "Reporting & Stabilization Accelerator Pack",
           "Shared",
-          "Plan"
+          "Built"
+        ],
+        [
+          "INT-SS-01",
+          "JIT Baseline Story Library (91 stories, 15 process areas)",
+          "Shared",
+          "Built"
         ]
       ]
     },
@@ -1525,21 +1575,21 @@
           "18-Week Master Project Plan (template)",
           "Shared",
           "mpp/xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "SH-PP-02",
           "ServiceNow GTM Project Plan Variant",
           "Shared",
           "mpp/xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "SH-PP-03",
           "Microsoft GTM Project Plan Variant",
           "Shared",
           "mpp/xlsx",
-          "Plan"
+          "Built"
         ],
         [
           "SH-PP-04",

@@ -186,3 +186,128 @@ Brand evolution is allowed but must be intentional. To change a brand constant:
 4. Update this doc with the new value and the rationale
 
 Do **not** hand-edit colors or fonts inside generated .docx files. Those edits are lost the next time the build script runs.
+
+---
+
+## 11. Messaging conventions
+
+### The theme is bigger than "OOTB"
+
+"OOTB-First" is the right discipline language for **internal** artifacts — consultant playbooks, how-to guides, trust-but-verify materials. It is blunt, intentional, and should stay that way inside the team.
+
+For **customer-facing** artifacts — presentations, decision guides, workshop pre-reads, facilitator decks — the governing theme is **"Modernizing the Core."** The message is:
+
+> *We are standing up a proven, AI-ready baseline implementation of ServiceNow. Any deviations from that baseline are captured in a governance triage log — they are not lost, they are managed — and addressed iteratively through a follow-on engagement once the core is stable and delivering value.*
+
+This framing does four things at once: it scopes the current engagement cleanly, it positions deviations as governed decisions rather than gaps or failures, it sets up the follow-on contract naturally, and it connects every decision back to AI realization as the long-term goal.
+
+### Language rules by audience
+
+| Context | Use | Avoid |
+|---------|-----|-------|
+| Internal docs (playbooks, how-to guides, cheatsheets) | "OOTB-First", "OOTB approach", "customization vs. configuration" | No restriction |
+| Client presentations and decks | "Modernizing the Core", "baseline implementation", "governed deviation", "triage log", "AI realization", "sustainable value" | "OOTB-First" as a headline or theme — use it in body text only when explaining the methodology |
+| Workshop slide titles | "Modernizing the Core — [process area]" | "OOTB-First [process area] Workshop" |
+| Decision guide titles | Keep current naming ("Decision Topic Guide: …") — the topic names are process-area specific | — |
+
+### Canonical deck title pattern
+
+```
+Title:    Modernizing the Core
+Subtitle: [Process Area] — Ensuring AI Realization and Optimizing Long-Term Value
+```
+
+Examples:
+- *Modernizing the Core — Incident Management: Ensuring AI Realization and Optimizing Long-Term Value*
+- *Modernizing the Core — Service Catalog: Ensuring AI Realization and Optimizing Long-Term Value*
+- *Modernizing the Core — Employee Experience: Ensuring AI Realization and Optimizing Long-Term Value*
+
+The subtitle pattern is a template, not a lock. Adjust the second clause when the specific process area warrants it (e.g., for HAM: "Establishing the Asset Foundation for AI-Driven Lifecycle Management").
+
+### The governance triage log
+
+Any time a customer decision deviates from the baseline, that deviation goes in the **Governance Triage Log** — a living artifact tracking the deviation, its rationale, its scope impact, and its disposition (deferred to follow-on / accepted as configuration / escalated). Client-facing materials should reference this log by name and frame it as a feature, not a safety net: it is how the engagement protects both the baseline and the customer's legitimate requirements simultaneously.
+
+---
+
+## 12. Presentations (.pptx)
+
+### Overview
+
+Every practice .pptx is built from `pptx_brand.js` — the PowerPoint equivalent of `ecs_template.py`. It provides the same brand constants, consistent slide layouts, and a factory function that returns pre-wired helpers. Scripts should never roll their own pptxgenjs calls; add to the module instead.
+
+### Where things live
+
+| Item | Path |
+|------|------|
+| Brand module | `03_Shared/00_Templates_and_Branding/pptx_brand.js` |
+| Template build script | `03_Shared/00_Templates_and_Branding/build_ecs_presentation_template.js` |
+| Blank starter deck (7 slides) | `03_Shared/00_Templates_and_Branding/ECS_Presentation_Template.pptx` |
+| Workshop decks | `03_Shared/05_Workshop_Presentations/` |
+
+### Brand constants (PPTX)
+
+| Token | Hex | Where it appears |
+|-------|-----|------------------|
+| `NAVY` | `1E3A5F` | Cover/divider slide bg · col headers · H2 text |
+| `TEAL` | `14B8A6` | Cover accent bar · closing slide CTA text |
+| `TEAL_DK` | `0D9488` | Section tags · card header fills · left col header |
+| `TEAL_LT` | `F0FDFA` | Info callout background |
+| `WHITE` | `FFFFFF` | Header text on dark fills |
+| `LT_BG` | `F7F9FC` | Card body fill |
+| `SLATE` | `334155` | Body prose |
+| `MID` | `64748B` | Agenda descriptors · secondary text |
+| `LT_GRY` | `E2E8F0` | Dividers · card borders |
+
+Typography: **Trebuchet MS** for all headings and display text; **Calibri** for all body, bullet, and caption text.
+
+### How to build a new deck
+
+```js
+"use strict";
+const path = require("path");
+const LOGO_PATH = path.resolve(__dirname,
+  "../../../00_Master_Blueprint/assets/everforth_logo.png");
+const brand = require(path.resolve(__dirname, "pptx_brand"));
+const {
+  pres, COLORS,
+  addTitleSlide, addSectionDivider, addContentSlide,
+  addTwoColSlide, addDecisionSlide, addCallout, addSectionTag, addFooter, addLogo
+} = brand.init({ logoPath: LOGO_PATH });
+
+// Add slides ...
+addTitleSlide("Deck Title", "Subtitle", "Italic descriptor", "Prepared by ECS Federal", 1);
+
+// Write output
+const outPath = "/absolute/path/to/output.pptx";
+pres.writeFile({ fileName: outPath })
+  .then(() => console.log("Written:", outPath))
+  .catch(e => console.error("Error:", e));
+```
+
+Run with:
+```
+NODE_PATH=/usr/local/lib/node_modules_global/lib/node_modules node build_your_deck.js
+```
+
+### Available slide layouts
+
+| Helper | Purpose |
+|--------|---------|
+| `addTitleSlide(title, subtitle, italicNote, footerLeft, slideNum)` | Navy cover — use as slide 1 |
+| `addSectionDivider(title, subtitle, italicNote, slideNum)` | Navy full-bleed section break |
+| `addContentSlide(sectionTag, headline, slideNum)` | White content slide — returns slide object for custom shapes |
+| `addTwoColSlide(sectionTag, headline, leftHdr, rightHdr, leftColor, rightColor, slideNum)` | Two-column layout — returns `{ slide, leftX, rightX, leftW, rightW, contentY }` |
+| `addDecisionSlide(decisionNum, question, leftContent, rightContent, defenseText, slideNum)` | OOTB-first decision frame — left = recommendation, right = customer questions |
+| `addCallout(slide, boldLabel, body, style, x, y, w, h)` | Inline callout bar — style: `"info"` / `"warning"` / `"tip"` |
+| `addLogo(slide)` | Places Everforth logo top-right — called automatically by all layout helpers |
+| `addFooter(slide, slideNum, darkBg)` | Footer rule + text — called automatically by all layout helpers |
+| `addSectionTag(slide, label)` | Small teal eyebrow tag — called automatically by layout helpers |
+
+### Non-negotiable rules
+
+1. All presentation build scripts import `pptx_brand.js` — never inline color constants or shape helpers.
+2. The logo path must resolve at build time; pass `logoPath` explicitly if the script is not co-located with the module.
+3. Slide dimensions are always LAYOUT_WIDE: **13.33 in × 7.5 in**. Do not change layout.
+4. Client-facing decks: ensure the footer left label reads `"ECS Federal · ServiceNow Practice · Confidential"` (pass as `footerLabel` to `init()`).
+5. After building a new deck, QA with LibreOffice: `python3 scripts/office/soffice.py <file.pptx>` then inspect pages with pdftoppm.

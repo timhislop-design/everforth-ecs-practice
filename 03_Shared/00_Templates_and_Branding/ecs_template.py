@@ -243,10 +243,22 @@ class EcsDocument:
         bottom.set(qn('w:space'), '1')
         pBdr.append(bottom)
         insert_in_order(pPr, pBdr, PPR_ORDER)
-        # Logo
+        # Logo — use header part's new_pic_inline directly; run.add_picture() fails
+        # in header context on some python-docx builds (IndexError in part resolution)
         logo_run = p.add_run()
         if os.path.exists(self.logo_path):
-            logo_run.add_picture(self.logo_path, width=Inches(1.05))
+            try:
+                from PIL import Image
+                import io as _io
+                _img = Image.open(self.logo_path).convert("RGBA")
+                _buf = _io.BytesIO()
+                _img.save(_buf, format="PNG")
+                _buf.seek(0)
+                _hpart = header.part
+                _inline = _hpart.new_pic_inline(_buf, Inches(1.05), None)
+                logo_run._r.add_drawing(_inline)
+            except Exception:
+                pass  # logo silently absent rather than crashing the build
         # Tab to right
         p.add_run("\t")
         # Right label (letter-spaced slate)
