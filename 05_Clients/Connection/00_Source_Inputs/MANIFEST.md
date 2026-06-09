@@ -1,10 +1,12 @@
-# Source Artifacts — Connection Engagement
+# Source Inputs — Connection Engagement
 
-These are the Connection-specific documents that were built **inside the OOTB template library while Connection served as the working model**. They have been separated out of the generic library (folders 00–03) and relocated here as **mineable source material** for the Connection onboarding package and live delivery.
+This folder is the engagement's **context hub** — drop the SOW, baseline sales docs, prior deliverables, and any reference material we build collateral *from*. Read it at session startup to ground the work. As new context arrives (signed SOW, client docs, statements), add the file here and log it in the table below.
 
-> The generic OOTB library (00–03) stays in place — it is what we *build from*. These artifacts are the worked Connection example we *adapt from*. The build scripts that generated several of these remain in the library and can regenerate generic versions.
+The docs currently here were built inside the OOTB template library while Connection served as the working model; they were separated out of the generic library (00–03) and relocated here as mineable source material.
 
-| Artifact | Original Location | What It Is | Mine For |
+> The generic OOTB library (00–03) stays in place — it is what we *build from* generically. These inputs are the Connection-specific material we *adapt from*. The build scripts that generated several of these remain in the library and can regenerate generic versions.
+
+| Input | Original Location | What It Is | Use For |
 |---|---|---|---|
 | `ECS_OOTB_Delivery_Playbook-Connection.docx` | `01_Internal/01_Consultant_Handbook/` | The delivery playbook written against Connection | Internal team onboarding — methodology, sprint flow |
 | `Connections- Modernizing the Core...v3 - Draft.docx` | `01_Internal/11_SOW_Draft/` | Connection SOW / reimplementation strategy draft | Scope, objectives, success criteria for the engagement |

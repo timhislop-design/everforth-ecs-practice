@@ -15,9 +15,11 @@ This folder holds **won work we are now executing** — one subfolder per client
 
 ```
 05_Clients/
+  _TEMPLATE/                 Copy + rename to start a new engagement
   [Client]/
-    ENGAGEMENT_BRIEF.md        Single source of truth for the engagement
-    01_Onboarding/             The delivery onboarding package
+    ENGAGEMENT_BRIEF.md        Single source of truth + Working Rules
+    00_Source_Inputs/          Context hub — drop the SOW, sales docs, client docs here
+    01_Onboarding/             The delivery onboarding package + ONBOARDING_MAP.md
       Internal_Team/             Consultant-facing onboarding
       Client_Facing/             Client-facing onboarding
     02_Delivery/               Live delivery docs accumulated as the engagement runs

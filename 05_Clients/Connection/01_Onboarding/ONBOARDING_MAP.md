@@ -35,7 +35,7 @@ The client gets a **thin, sequenced** set — enough to engage, never the intern
 
 | Client audience | What they get | When | Source |
 |---|---|---|---|
-| **Executive Sponsor / Steering** | "Why OOTB-First" whitepaper (the narrative) · Governance Charter | Kickoff | `00_Source_Artifacts/` (adapt) |
+| **Executive Sponsor / Steering** | "Why OOTB-First" whitepaper (the narrative) · Governance Charter | Kickoff | `00_Source_Inputs/` (adapt) |
 | **Project Sponsor / PM** | Engagement roadmap · Governance Charter · roles & cadence | Kickoff | Governance Charter + sprint schedule |
 | **Process owners / SMEs** | Only the Decision Topic Guides + Workshop Pre-Reads for *their* workshop | Per workshop | `02_Client/04` + `05` (curated subset) |
 | **Platform team** | Foundation/admin SOPs for their modules | Pre-go-live | Accelerator Pack READMEs |
