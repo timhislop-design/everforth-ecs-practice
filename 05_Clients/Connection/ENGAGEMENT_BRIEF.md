@@ -69,9 +69,11 @@ Follows the ECS 18-week baseline: Sprint 0 + Sprints 1–6 + Hypercare, grouped 
 
 ---
 
-## Source Artifacts
+## Source Artifacts & Delivery Docs
 
 Connection-specific docs built while Connection was the OOTB working model now live in `00_Source_Artifacts/` (see its `MANIFEST.md`). The curation approach for turning the library into a right-sized, role-based onboarding package is in `01_Onboarding/ONBOARDING_MAP.md`.
+
+**Default project plan:** `02_Delivery/Connection_18Week_Project_Plan.xlsx` — the 18-week baseline plus a resource build-up tab added for Connection. The generic baseline (`03_Shared/02_Project_Plans/ECS_18Week_Baseline_Project_Plan.xlsx`) stays in the library; fold the resource-build-up tab back into it later if it should become standard.
 
 ---
 
