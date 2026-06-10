@@ -26,7 +26,7 @@ d.h2("ECS team")
 d.table(headers=["Role","Start with","Use throughout"], rows=[
  ["Engagement Manager","Team Onboarding & Vision; Engagement Delivery Guidelines; Project Plan","Status Report; Exec Dashboard; Dependency Tracker; RAID; Deliverables Matrix; Project Controls; Sprint Operating Kit; RACI"],
  ["Solution Architect","Delivery Guidelines; Architecture & CSDM Alignment; Accelerator Packs","Config User Stories; Workshop decks; SIT Scripts; Cutover Runbook"],
- ["Process Consultant","Workshop Facilitation Guide; Workshop decks + Pre-Reads; Demo Scripts","Config User Stories; Sprint Demo template; Scope Notes; UAT scripts"],
+ ["Process Consultant / BA (Scrum Master)","Workshop Facilitation Guide; Workshop decks + Pre-Reads; Demo Scripts; Sprint Operating Kit","Config User Stories; Sprint Demo template; Scope Notes; UAT scripts; runs ceremonies + owns velocity/burndown (SM hat)"],
  ["Technical Consultant","Accelerator Packs; Integration & Vonage packs","Config User Stories; SIT Scripts; Demo Scripts"],
  ["Practice Lead","Engagement Delivery Guidelines (trust-but-verify); RACI","Exec Dashboard; Delivery Readiness Audit; Project Controls"],
 ])
@@ -56,6 +56,5 @@ d.h1("The Backlog (everything is a story)", numbered=True)
 d.para("Two workbooks form the complete project backlog - import both to ServiceNow Agile:")
 d.bullet("Configuration User Stories (141) - the buildable decisions, with Given/When/Then acceptance criteria.")
 d.bullet("Project Delivery Stories (55) - documentation, training, governance, testing, go-live, hypercare - so the whole project is visible, not just the build.")
-d.para("UAT End-to-End Test Scripts trace directly back to the stories; the Story Coverage tab shows where each is validated.")
-d.callout("This library is a snapshot. The live, reproducible baseline lives in the ECS working framework; updates are made there and re-exported.")
+d.callout("This library is a snapshot. The live, reproducible baseline lives in the ECS working framework; updates are made there and re-exported - do not edit these files directly.")
 d.save(OUT); print("Saved execution guide ->", OUT)

@@ -33,7 +33,7 @@ doc.h1("Decision Rights at a Glance", numbered=True)
 doc.table(headers=["Role", "Owns the decision on"], rows=[
     ["Engagement Manager (EM)", "Customer relationship, scope/budget, escalation; chairs the Customization Council; PCR authority."],
     ["Solution Architect (SA)", "Architecture & CSDM; OOTB vs customization (Rule of Three pass/fail); technical sign-off; code/config review."],
-    ["Process Consultant (PC)", "Workshop facilitation; requirements-to-stories; sprint cadence; story-level Definition of Done."],
+    ["Process Consultant / BA (PC) - also Scrum Master", "Workshop facilitation; requirements-to-stories; sprint cadence and ceremonies; Definition of Ready / Done; velocity & burndown; impediment removal."],
     ["Technical Consultant(s) (TC)", "Configuration, integration builds, data loads, story-level test."],
     ["Practice Lead (PM)", "Trust-but-verify oversight; the technical-path key in the two-key decision; escalation authority."],
 ])
@@ -52,12 +52,14 @@ doc.bullet("Just-in-time: discipline how-to guides; CMDB/CSDM and integration pa
 doc.bullet("Heaviest: Stage 1 (CSDM data model, greenfield) and the ITSM/Change design workshops in Stages 1-2.")
 doc.bullet("Your check: every customization carries a completed impact assessment; nothing reaches the Council without one.")
 
-doc.h1("Process Consultant (PC)", numbered=True)
-doc.para("You run the workshops where the OOTB discipline is won or lost, and you turn requirements into signed-off stories.")
-doc.bullet("Core reading: Decision Topic Guides and Workshop Pre-Reads for the in-scope processes.")
+doc.h1("Process Consultant / BA (PC) - also Scrum Master", numbered=True)
+doc.para("You run the workshops where the OOTB discipline is won or lost, and you turn requirements into signed-off stories. You also wear the Scrum Master hat: you run the ceremonies and protect the sprint.")
+doc.bullet("Core reading: Decision Topic Guides and Workshop Pre-Reads for the in-scope processes; the Sprint Operating Kit.")
 doc.bullet("Just-in-time: per-sprint customer briefs; UAT test packs.")
 doc.bullet("Heaviest: the workshop-dense build sprints (ITSM Core, Catalog, Employee Experience) across Stages 1-2.")
-doc.bullet("Your check: each workshop ends with a signed-off story, not a list of \"things to think about.\"")
+doc.bullet("As Scrum Master: run planning, standup, demo, and retro; enforce Definition of Ready / Done; own velocity and burndown; remove impediments and escalate the rest to the EM; shield the sprint from mid-sprint scope.")
+doc.bullet("Your check: each workshop ends with a signed-off story, not a list of \"things to think about\" - and each sprint ends on its commitment or names why it did not.")
+doc.bullet("Neutrality: you both write stories and serve as Scrum Master; when those pull apart under scope pressure, the EM and Practice Lead are the check.")
 
 doc.h1("Technical Consultant(s) (TC)", numbered=True)
 doc.para("You build. Configuration, integrations, and data - the standard way unless a deviation has cleared the two-key decision.")

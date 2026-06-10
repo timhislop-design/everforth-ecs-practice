@@ -109,5 +109,5 @@ ws.freeze_panes="B5"; ws.sheet_view.showGridLines=False
 # legend
 lr=r+1
 ws.cell(lr,1,"Legend:  R = Responsible   A = Accountable   C = Consulted   I = Informed").font=bf(b=True,c=NAVY)
-ws.cell(lr+1,1,"Roles: EM=Engagement Mgr, SA=Solution Architect, PC=Process Consultant, TC=Technical Consultant, Prac.Lead=ECS Practice Lead; Sponsor/Prod.Owner/Cust.PM/Tech.Lead/SMEs = Connection").font=bf(c=SLATE)
+ws.cell(lr+1,1,"Roles: EM=Engagement Mgr, SA=Solution Architect, PC=Process Consultant / BA (also wears the Scrum Master hat - runs ceremonies, enforces DoR/DoD, owns velocity, removes impediments), TC=Technical Consultant, Prac.Lead=ECS Practice Lead; Sponsor/Prod.Owner/Cust.PM/Tech.Lead/SMEs = Connection").font=bf(c=SLATE)
 wb.save(OUT2); print("Saved:",OUT2)

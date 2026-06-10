@@ -74,6 +74,15 @@ d=EcsDocument(meta=DocMeta(eyebrow="INTERNAL - SPRINT OPERATING KIT",
 d.add_cover_page(); d.page_break()
 d.h1("How to Use This Kit", numbered=False)
 d.para("This kit standardizes how we run each two-week sprint on Connection: when a story is Ready, how we plan, demo, and retro, and the weekly cadence. It complements the Definition of Done in the Delivery Guidelines.")
+d.h1("Who Runs the Sprint - the Scrum Master Hat", numbered=True)
+d.para("On a pod this size we do not staff a dedicated Scrum Master. The Business Process Consultant / Business Analyst (BPC/BA) wears the Scrum Master hat in addition to facilitating workshops and writing stories. As Scrum Master the BPC/BA:")
+d.bullet("Runs the ceremonies - planning, daily standup, demo/review, and retro - and owns the two-week cadence.")
+d.bullet("Enforces the Definition of Ready at intake and the Definition of Done at close.")
+d.bullet("Owns velocity, burndown, and sprint-health signals, and feeds them to the Executive Health Dashboard.")
+d.bullet("Removes impediments; escalates the ones the team cannot clear to the Engagement Manager.")
+d.bullet("Protects the sprint commitment - shields the pod from mid-sprint scope injection and routes new asks to the backlog or the Customization Council.")
+d.bullet("Coaches both the ECS pod and the Connection team on the agile operating rhythm.")
+d.callout("Neutrality check: the BPC/BA both writes stories and serves as Scrum Master. Where the two pull against each other - e.g., scope pressure on the sprint - the EM and Practice Lead are the check that keeps the servant-leader role honest. No extra seat required.")
 d.h1("Definition of Ready (DoR)", numbered=True)
 d.para("A story may enter a sprint only when:")
 d.bullet("It traces to a workshop decision (or a clear configuration need) and an epic.")
@@ -84,7 +93,6 @@ d.bullet("It is OOTB-first; any likely deviation is flagged for the Council befo
 d.h1("Sprint Planning Agenda (90 min)", numbered=True)
 d.bullet("Review sprint goal and capacity (see Sprint Plan & Capacity Model).")
 d.bullet("Walk the candidate stories; confirm each meets the DoR.")
-d.bullet("Confirm acceptance criteria and estimates; assign owners.")
 d.bullet("Identify dependencies and customer inputs needed this sprint (update the Dependency Tracker).")
 d.bullet("Commit the sprint backlog; record in SN Agile.")
 d.h1("Sprint Demo / Review", numbered=True)
@@ -96,9 +104,9 @@ d.bullet("Actions with owners and due dates; carry into the next sprint.")
 d.bullet("Feed material risks/decisions into the RAID and Decision Register.")
 d.h1("Weekly Cadence", numbered=True)
 d.table(headers=["When","Ceremony / Touchpoint","Owner"], rows=[
- ["Daily","Standup (15 min)","PC"],
+ ["Daily","Standup (15 min)","BPC/BA (Scrum Master)"],
  ["Weekly","Status report to Sponsor/PM; health report to practice mgmt (Fri COB)","EM"],
- ["Bi-weekly","Sprint demo + Sponsor sync; planning + retro at sprint boundary","EM/PC"],
+ ["Bi-weekly","Sprint demo + Sponsor sync; planning + retro at sprint boundary","BPC/BA (SM) + EM"],
  ["As needed","Customization Council (48-hr SLA)","EM"],
  ["Monthly","Steering review","EM"],
 ])
