@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connection - Execution Navigator</title>
+<style>
+:root{--navy:#0B1F3A;--teal:#14B8A6;--tealdk:#0D9488;--blue:#2E74B5;--slate:#475569;--bg:#F7F9FC;--card:#ffffff;--bd:#E2E8F0;--amber:#B45309}
+*{box-sizing:border-box} body{margin:0;font-family:Calibri,Segoe UI,Arial,sans-serif;color:#1A1A1A;background:var(--bg);line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 22px}
+h1{color:var(--navy);font-size:26px;margin:0 0 4px} .sub{color:var(--slate);font-size:14px;margin:0 0 22px}
+.flare{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.metric{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:12px 16px}
+.metric .l{font-size:12px;color:var(--slate)} .metric .n{font-size:24px;font-weight:bold;color:var(--navy)} .metric .s{font-size:11px;color:#94A3B8}
+.controls{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:14px} .controls>div{flex:1;min-width:200px}
+label{display:block;font-size:12px;color:var(--slate);margin-bottom:5px} select{width:100%;padding:9px 10px;border:1px solid var(--bd);border-radius:8px;font-size:14px;background:#fff}
+.count{font-size:13px;color:var(--slate);margin:6px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;border-left:4px solid var(--teal)}
+.c.client{border-left-color:var(--blue)}
+.c .h{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.c .pill{font-size:10px;font-weight:bold;letter-spacing:.5px;padding:2px 7px;border-radius:5px;color:#fff;background:var(--tealdk)}
+.pill.sheet{background:var(--blue)} .pill.deck{background:var(--navy)} .pill.pack{background:var(--amber)}
+.c a{font-weight:bold;font-size:14px;color:var(--navy);text-decoration:none} .c a:hover{text-decoration:underline}
+.c .p{font-size:13px;color:var(--slate)}
+.foot{margin-top:24px;font-size:11px;color:#94A3B8}
+.legend{font-size:12px;color:var(--slate);margin-bottom:14px}
+.legend b{color:var(--tealdk)} .legend .cl{color:var(--blue)}
+</style></head><body><div class="wrap">
+<h1>Connection Engagement - Execution Navigator</h1>
+<p class="sub">Pick your role and phase. You'll see only what's yours, right now. The full catalog is in the Library Index.</p>
+<div class="flare">
+<div class="metric"><div class="l">Backlog</div><div class="n">196</div><div class="s">stories (config + delivery)</div></div>
+<div class="metric"><div class="l">Readiness</div><div class="n">0</div><div class="s">open gaps</div></div>
+<div class="metric"><div class="l">Deliverables</div><div class="n">18 / 27</div><div class="s">ready</div></div>
+<div class="metric"><div class="l">Workshops</div><div class="n">18</div><div class="s">decks</div></div>
+<div class="metric"><div class="l">Dependencies</div><div class="n">17</div><div class="s">tracked</div></div>
+</div>
+<div class="legend"><b>&#9632; ECS team</b> &nbsp;&nbsp; <span class="cl">&#9632; Connection (client)</span> &nbsp; | &nbsp; status tiles are a snapshot - the EM refreshes them from the trackers.</div>
+<div class="controls">
+<div><label for="role">Your role</label><select id="role"></select></div>
+<div><label for="phase">Phase</label><select id="phase"></select></div>
+</div>
+<div class="count" id="count"></div>
+<div class="grid" id="cards"></div>
+<p class="foot">Static execution library - finalized artifacts only. The live, reproducible baseline lives in the ECS working framework (05_Clients/Connection); updates are made there and re-exported.</p>
+</div>
+<script>
+var ROLES=[["em","Engagement Manager","ecs"],["sa","Solution Architect","ecs"],["pc","Process Consultant","ecs"],["tc","Technical Consultant","ecs"],["pl","Practice Lead","ecs"],["sponsor","Executive Sponsor","client"],["po","Product Owner","client"],["pm","Project Manager","client"],["tlead","Technical Lead","client"],["sme","SME / Process Owner","client"],["uat","UAT Tester","client"],["admin","Platform Admin","client"]];
+var PHASES=[["all","All phases"],["s0","Sprint 0 - Setup"],["st1","Stage 1 - Build (Spr 1-2)"],["st2","Stage 2 - Build (Spr 3-5)"],["st3","Stage 3 - Deliver (Spr 6-7)"],["golive","Go-Live (Wk 16)"],["close","Hypercare & Close"],["ongoing","Ongoing / Governance"]];
+var A=[
+["Client Onboarding Guide","doc","What to expect, journey, governance","01_Onboarding/Client_Facing/Connection_Client_Onboarding_Guide.docx",["sponsor","po","pm","tlead","sme"],["s0"]],
+["Kickoff Deck","deck","Joint kickoff presentation","01_Onboarding/Client_Facing/Connection_Kickoff_Deck.pptx",["sponsor","po","pm","em"],["s0"]],
+["Governance Charter","doc","Operating model + two-key decisions","01_Onboarding/Client_Facing/Customer_Governance_Charter.docx",["sponsor","po","em","pl"],["s0","ongoing"]],
+["Team Onboarding & Vision","doc","Why, discipline, your reading path","01_Onboarding/Internal_Team/Connection_Team_Onboarding_and_Vision.docx",["em","sa","pc","tc","pl"],["s0"]],
+["Engagement Delivery Guidelines","doc","Rule of Three, Council, DoD, do's & don'ts","01_Onboarding/Internal_Team/Connection_Engagement_Delivery_Guidelines.docx",["em","sa","pc","tc","pl"],["s0","ongoing"]],
+["Role & Accountability Quick-Ref","doc","What you own, your reading path","01_Onboarding/Internal_Team/Connection_Role_and_Accountability_QuickRef.docx",["em","sa","pc","tc","pl"],["s0","ongoing"]],
+["RACI Matrix","sheet","Who owns what, by deliverable","02_Delivery/Connection_RACI_Matrix.xlsx",["em","pl","pm","po"],["s0","ongoing"]],
+["Workshop Facilitation Guide","doc","Five-tier, six-beat, rebuttals","01_Onboarding/Internal_Team/Connection_Workshop_Facilitation_Guide.docx",["pc","sa"],["st1","st2"]],
+["Sprint Operating Kit","doc","Definition of Ready, planning, retro, cadence","01_Onboarding/Internal_Team/Connection_Sprint_Operating_Kit.docx",["em","sa","pc","tc"],["st1","st2","st3"]],
+["18-Week Project Plan","sheet","Sprints 0-8, dates, resource buildup","02_Delivery/Connection_18Week_Project_Plan.xlsx",["em","pm"],["s0","st1","st2","st3"]],
+["Onboarding Checklist","sheet","Sprint 0 readiness tasks","01_Onboarding/Connection_Onboarding_Checklist.xlsx",["em","pm"],["s0"]],
+["Customer Dependency Tracker","sheet","Your obligations (data, access, decisions)","02_Delivery/Connection_Customer_Dependency_Tracker.xlsx",["em","pm","sponsor","tlead"],["s0","ongoing"]],
+["Accelerator Packs","pack","Data workbooks to complete","02_Delivery/Accelerator_Packs/",["tc","sa","sme","pm"],["s0","st1","st2"]],
+["Workshop decks + Pre-reads","deck","Per-module decisions, pre-warmed","02_Delivery/Workshops/",["pc","sa","sme","po"],["st1","st2"]],
+["Demo Scripts","doc","Run consistent module demos","02_Delivery/Workshops/Demo_Scripts/",["pc","tc"],["st1","st2","st3"]],
+["Architecture & CSDM Alignment","doc","Topology + data foundation (Month 1)","02_Delivery/Connection_Platform_Architecture_and_CSDM_Alignment.docx",["sa","tlead"],["st1"]],
+["Config User Stories (141)","sheet","Buildable decisions + acceptance criteria","02_Delivery/Connection_User_Stories_SN_Agile.xlsx",["sa","pc","tc","po"],["st1","st2","st3"]],
+["Project Delivery Stories (55)","sheet","Docs/training/PMO as stories","02_Delivery/Connection_Project_Delivery_Stories.xlsx",["em","pl"],["s0","st1","st2","st3","ongoing"]],
+["Sprint Plan & Capacity","sheet","Load vs velocity per sprint","02_Delivery/Connection_Sprint_Plan_and_Capacity.xlsx",["em","sa"],["s0","st1","st2","st3"]],
+["Sprint Demo template","deck","Bi-weekly sprint review","02_Delivery/Connection_Sprint_Demo_TEMPLATE.pptx",["pc","em"],["st1","st2","st3"]],
+["Weekly Status Report","doc","EM to Sponsor, RAG by workstream","02_Delivery/Connection_Weekly_Status_Report_TEMPLATE.docx",["em","sponsor","pm"],["ongoing"]],
+["Executive Health Dashboard","deck","One-page delivery health","02_Delivery/Connection_Executive_Health_Dashboard.pptx",["em","sponsor","pl"],["ongoing"]],
+["Governance Triage & RAID","sheet","Deviations, risks, issues","02_Delivery/Connection_Governance_Triage_and_RAID.xlsx",["em","pl","sponsor"],["ongoing"]],
+["Project Controls","sheet","PCR, acceptance, decisions, assumptions","02_Delivery/Connection_Project_Controls.xlsx",["em","po","pl"],["ongoing"]],
+["Vonage CTI & Interactions workshop","deck","Phone channel via Interactions","02_Delivery/Workshops/Connection_Interactions_Vonage_CTI_Workshop.pptx",["sa","tc","tlead"],["st2"]],
+["SIT Test Scripts + Test Data","sheet","Integration testing before UAT","02_Delivery/Connection_SIT_Test_Scripts.xlsx",["sa","tc"],["st3"]],
+["UAT End-to-End Test Scripts","sheet","Business journeys, traced to stories","02_Delivery/Connection_UAT_End_to_End_Test_Scripts.xlsx",["uat","pc","po"],["st3"]],
+["UAT Guidebook","doc","How to test, step by step","02_Delivery/Connection_UAT_Guidebook_for_End_Users.docx",["uat"],["st3"]],
+["Go-Live Readiness Checklist","sheet","Gated go/no-go criteria","02_Delivery/Connection_Go_Live_Readiness_Checklist.xlsx",["em","sponsor","po"],["st3","golive"]],
+["Cutover Runbook","doc","Sequence, validation, rollback","02_Delivery/Connection_Cutover_Runbook.docx",["sa","tlead","em"],["st3","golive"]],
+["Administrator Guide & KT","doc","Run the platform; 4 KT sessions","02_Delivery/Knowledge_Transfer/Connection_Administrator_Guide_and_KT.docx",["admin","sa"],["golive","close"]],
+["Train-the-Trainer Toolkit","doc","Enable your trainers","02_Delivery/Knowledge_Transfer/Connection_Train_the_Trainer_Toolkit.docx",["pc","sme"],["golive","close"]],
+["Operational Handoff Pack","doc","Ownership, support model, escalation","02_Delivery/Connection_Operational_Handoff_Pack.docx",["em","sponsor","admin","tlead"],["close"]],
+["Delivery Readiness Audit","sheet","Start-to-finish readiness","02_Delivery/Connection_Delivery_Readiness_Audit.xlsx",["em","pl"],["ongoing"]],
+["SOW Deliverables Matrix","sheet","Every committed deliverable + status","02_Delivery/Connection_SOW_Deliverables_Matrix.xlsx",["em","pl"],["ongoing"]]
+];
+var rs=document.getElementById('role'),ps=document.getElementById('phase'),cards=document.getElementById('cards'),count=document.getElementById('count');
+function grp(g,lbl){var o=document.createElement('optgroup');o.label=lbl;ROLES.filter(function(r){return r[2]===g}).forEach(function(r){var x=document.createElement('option');x.value=r[0];x.textContent=r[1];o.appendChild(x)});rs.appendChild(o)}
+grp('ecs','ECS team');grp('client','Connection (client)');
+PHASES.forEach(function(p){var o=document.createElement('option');o.value=p[0];o.textContent=p[1];ps.appendChild(o)});
+function render(){var r=rs.value,ph=ps.value,rl=ROLES.filter(function(x){return x[0]===r})[0],client=rl[2]==='client';
+var list=A.filter(function(a){return a[4].indexOf(r)>-1 && (ph==='all'||a[5].indexOf(ph)>-1)});
+count.textContent=list.length+' item'+(list.length===1?'':'s')+' for '+rl[1]+(ph==='all'?'':' in '+PHASES.filter(function(p){return p[0]===ph})[0][1]);
+cards.innerHTML='';
+if(!list.length){cards.innerHTML='<div style="color:#475569;font-size:14px">Nothing assigned for this role in this phase.</div>';return}
+list.forEach(function(a){var d=document.createElement('div');d.className='c'+(client?' client':'');
+d.innerHTML='<div class="h"><span class="pill '+a[1]+'">'+a[1].toUpperCase()+'</span><a href="../'+a[3]+'">'+a[0]+'</a></div><div class="p">'+a[2]+'</div>';cards.appendChild(d)})}
+rs.value='em';ps.value='all';rs.onchange=render;ps.onchange=render;render();
+</script></body></html>
