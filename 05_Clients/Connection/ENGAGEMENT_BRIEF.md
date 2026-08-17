@@ -15,7 +15,7 @@
 | Start Date | 2026-06-09 |
 | Contract / Vehicle | Phase 1 fixed-scope SOW — ROM $350,000 |
 | Document | SOW v2.0 (DOC0004841), dated 2026-06-03 |
-| Primary Client Contact | TBD |
+| Primary Client Contact | Neveena (Connection Project Manager) — primary recipient for all document releases; distributes internally per each drop email's distribution section |
 | Internal Lead | Timothy Hislop |
 | Delivery Team | TBD |
 
@@ -78,6 +78,8 @@ Our **first work product** is the **delivery onboarding package** — making thi
 | `Connection_Role_and_Accountability_QuickRef.docx` | ECS team | `01_Onboarding/Internal_Team/` | docx | **Draft v1.0** | Decision-rights table + one section per role (own / read / heaviest sprints) |
 | `Connection_Workshop_Facilitation_Guide.docx` | ECS team | `01_Onboarding/Internal_Team/` | docx | **Draft v1.0** | 5-tier framework, six-beat pattern, decision-forcing techniques, scripted rebuttals, sign-off discipline |
 | `Connection_Onboarding_Checklist.xlsx` | Both | `01_Onboarding/` | xlsx | **Draft v1.0** | 19 Sprint 0 readiness tasks (ECS/Connection/Joint); status dropdown, conditional formatting, live summary |
+| `Connection_Communication_Plan.docx` | Connection | `01_Onboarding/Client_Facing/` | docx | **Draft v1.0** | Built via EcsDocument (CLT-CONN-ONB-02). Full comms cadence (Sprints 0–8 / 4 stages), roles & responsibilities, escalation path, contact roster. Adapted from library CLT-S0-06. Confidential footer. Name placeholders. |
+| `Connection_Document_Roadmap.docx` | Connection | `01_Onboarding/Client_Facing/` | docx | **Draft v1.0** | Built via EcsDocument (CLT-CONN-ONB-03). The five-drop JIT rollout at a glance — ships in Drop 1. |
 
 > **Onboarding package complete.** Client-facing: onboarding guide, kickoff deck, governance charter. Internal: vision guide, delivery guidelines, role quick-ref, workshop facilitation guide. Plus the shared onboarding tracker. Remaining: fill name placeholders; set project-plan start date.
 
@@ -221,3 +223,5 @@ Connection-specific docs built while Connection was the OOTB working model now l
 | 2026-06-09 | **Delivery Readiness Audit:** audited all artifacts vs SOW v2.0 lifecycle, both lenses. `Connection_Delivery_Readiness_Audit.xlsx` — 31 items (10 Have / 10 Partial / 11 Gap; 3 P1, 10 P2). P1: Customer Dependency Tracker, Cutover Runbook, Go-Live Readiness Checklist. Identifies the path to close gaps before each phase. |
 | 2026-06-09 | **Closed the 3 P1 gaps:** built Customer Dependency Tracker (xlsx, 17 SOW Sec 6 deps), Go-Live Readiness Checklist (xlsx, 19 gated criteria), Cutover Runbook (docx, sequence + rollback). Audit → 13 Have / 8 Gap / 0 P1 (refresh pending — file was open). |
 | 2026-06-09 | **Solidify pass + two-framework model:** closed remaining gaps (Capacity Model, RACI, Project Controls [PCR/acceptance/decisions/assumptions], SIT scripts+test data, Operational Handoff, Sprint Operating Kit; copied 15 pre-reads + 7 demo scripts). Fixed delivery-story points bug. Audit → 26 Have / 5 Partial / 0 Gap. Built **`06_Client_Upload/Connection/`** static library (155 artifacts, role+phase Execution Guide + Index, zipped) via re-runnable export trigger. |
+| 2026-08-07 | Built **Connection Communication Plan** (docx, client-facing, `01_Onboarding/Client_Facing/`) — Connection-specific adaptation of new library artifact CLT-S0-06: Connection cadence (Sprints 0–8 / 4 stages, Go-Live Wk 16), pod role model incl. BPC/BA Scrum Master hat, cadence rows tied to Connection artifacts (Weekly Status Report, Exec Health Dashboard, Triage & RAID, Dependency Tracker, Go-Live Checklist). Added to navigator; re-ran export trigger → 06 library + zip refreshed. |
+| 2026-08-07 | **Staged JIT document rollout:** built `06_Client_Upload/Connection_Staged_Rollout/` — `Client_Drops/` (5 populated drops + ready-to-send zips; Drop 1 = initial package incl. new `Connection_Document_Roadmap.docx` CLT-CONN-ONB-03 + SOW Deliverables Matrix; workshop decks staged in `Post_Workshop/` subfolders, released after each session) and `Internal_Release_Kit/` (`Staged_Rollout_Guide.xlsx` with release log, `Drop_Email_Templates_INTERNAL.docx` INT-CONN-ROLL-01, `Release_and_Execution_Runbook_INTERNAL.docx` INT-CONN-ROLL-02). Regenerable: `_tools/build_staged_rollout.py` + email/runbook builders, run after the library export. Roadmap added to navigator; library re-exported (159) and re-zipped. |

@@ -4,7 +4,22 @@
 
 ---
 
-## Status snapshot (last update: 2026-05-12 Session 4)
+## Status snapshot (last update: 2026-08-07)
+
+**Session addition (2026-08-07):**
+- **CLT-S0-06 — Communication Plan (Client-Facing)** → `02_Client/02_Sprint0_Customer_Readiness/CLT-S0-06_Communication_Plan.docx`
+  - Client-facing adaptation of INT-S0-07 (internal comms plan). New ID — added to the Sprint 0 Customer Readiness table in `blueprint_catalog.json` as **Built**
+  - 5 sections: Purpose · Communication Cadence (full Sprint 0 → Hypercare table, internal template IDs stripped, Governance Triage Log framed as a feature) · Roles & Responsibilities (your team / ECS team) · Escalation Path (3 steps with owners + clocks) · Contact Roster (fill-in at Sprint 0 kickoff)
+  - Internal-only Sprint Retro row dropped; client tone per BRAND_STANDARD (partnership-oriented, "Confidential — prepared for the recipient and their organization", client footer)
+  - Build script: `build_CLT-S0-06.py` (co-located) — includes a `fix_layout()` helper that pins `w:tblLayout` fixed + explicit `tblGrid` so `col_widths_in` actually render (template default autofit ignores them); reusable for future width-sensitive tables
+  - Master Blueprint re-rendered from JSON
+
+**Session addition (2026-08-03):**
+- **INT-OR-03 — Solution Architect Role Narrative (v2.0, 50/50 model)** → `01_Internal/11_Practice_Onboarding/INT-OR-03_Solution_Architect_Role_Narrative_INTERNAL.docx`
+  - Concise (cover + 3 pages) internal role & responsibilities narrative for the hybrid SA: 50% delivery (architecture, technical sign-off, workshops, standards) / 50% presales (technical discovery, demos, RFX technical volumes, draft LOE)
+  - v2.0 per Tim's direction: generic ServiceNow framing (not OOTB-first heavy) with a "Role Summary at a Glance" bullet section up front for easy reuse in 2–3 page docs; v1.0 (longer, OOTB-first/practice-model flavored) is in git history if needed
+  - Encodes pricing boundary (SA drafts LOE only; delivery leadership owns hours/staffing; rates & margin with delivery + practice leadership), collision rules for the split, decision-rights table, success measures
+  - Build script: `build_INT-OR-03.py` · Status in `blueprint_catalog.json`: **Built** (Practice Onboarding & Adoption table; INT-OR-02 Rollout Staging Plan remains Plan)
 
 **Completed across the build sessions so far:**
 

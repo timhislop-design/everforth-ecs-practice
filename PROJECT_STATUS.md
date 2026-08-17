@@ -1,6 +1,6 @@
 # ECS OOTB Collateral Build — Project Status
 > **Foundation document. Read this first in every session.**
-> Last updated: 2026-05-12 (Session 4)
+> Last updated: 2026-08-07
 
 ---
 
@@ -42,7 +42,7 @@ A complete practice-library build for **Everforth ECS Federal's ServiceNow OOTB 
 
 ---
 
-## Build status snapshot (last updated: 2026-05-12 Session 4)
+## Build status snapshot (last updated: 2026-08-07)
 
 **Notable built blocks (not exhaustive — catalog JSON is source of truth):**
 
@@ -79,6 +79,8 @@ A complete practice-library build for **Everforth ECS Federal's ServiceNow OOTB 
 | 29 | Incident Management How-To Consultant Guide | INT-HT-02 | ✅ Built |
 | 30 | Adopt-vs-Re-engineer Cheatsheet — Event Management | INT-AR-04 | ✅ Built |
 | 31 | Adopt-vs-Re-engineer Cheatsheet — AIOps & Advanced Correlation | INT-AR-05 | ✅ Built |
+| 32 | Solution Architect Role Narrative (50/50 delivery + presales) | INT-OR-03 | ✅ Built |
+| 33 | Communication Plan (Client-Facing) | CLT-S0-06 | ✅ Built |
 
 ---
 

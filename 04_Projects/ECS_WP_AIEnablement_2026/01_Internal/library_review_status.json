@@ -1,0 +1,14 @@
+{
+  "_readme": "Review scoreboard for the practice library navigator. Update stage status (not_started | in_review | complete) and per-artifact verdicts (proposed | ratified | update | replace | gap), then re-run build_library_navigator.py and commit both files. Artifact keys are repo-relative paths (accelerator packs use the pack folder path).",
+  "current_phase": "Phase 0 — Foundations",
+  "stages": {
+    "capture":    {"phase": "Phase 0", "status": "not_started"},
+    "proposal":   {"phase": "Phase 2", "status": "not_started"},
+    "sprint0":    {"phase": "Phase 3", "status": "not_started"},
+    "delivery":   {"phase": "Phase 4", "status": "not_started"},
+    "verify":     {"phase": "Phase 4", "status": "not_started"},
+    "close":      {"phase": "Phase 5", "status": "not_started"},
+    "governance": {"phase": "Phase 0", "status": "not_started"}
+  },
+  "artifacts": {}
+}
